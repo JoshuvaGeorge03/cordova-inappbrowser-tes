@@ -1,0 +1,7 @@
+{
+  "name": "cordova-inappbrowser-test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
