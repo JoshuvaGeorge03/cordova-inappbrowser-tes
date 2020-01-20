@@ -20,7 +20,7 @@ export class HomePage {
       clearsessioncache: 'yes',
       toolbar: 'no',
     });
-    browserRef.show();
+    const sub = browserRef.on('message').subscribe(console.log);
   }
   open() {
     const { Browser} = Plugins;
