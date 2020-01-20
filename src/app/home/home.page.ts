@@ -20,7 +20,10 @@ export class HomePage {
       clearsessioncache: 'yes',
       toolbar: 'no',
     });
-    const sub = browserRef.on('message').subscribe(console.log);
+    const sub = browserRef.on('message').subscribe(event => {
+      console.log('evenut', event);
+      browserRef.close();
+    });
   }
   open() {
     const { Browser} = Plugins;
